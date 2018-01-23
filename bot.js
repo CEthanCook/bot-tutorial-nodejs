@@ -22,7 +22,7 @@ function respond() {
 function postMessage() {
   var botResponse, options, body, botReq;
 
-  botResponse = cool();
+  botResponse = "Hi @Stone Holt";
 
   options = {
     hostname: 'api.groupme.com',
@@ -31,6 +31,7 @@ function postMessage() {
   };
 
   body = {
+    "attachments" : [ { "loci": [[3,11]], "type": 'mentions', "user_ids": ['19114849'] } ],
     "bot_id" : botID,
     "text" : botResponse
   };
